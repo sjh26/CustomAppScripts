@@ -11,7 +11,7 @@ dashboard_set(HOSTNAME              "krs-sam")
 dashboard_set(OPERATING_SYSTEM      "Windows10")
 dashboard_set(SCRIPT_MODE           "Experimental")        # Experimental, Continuous or Nightly
 dashboard_set(Slicer_RELEASE_TYPE   "P")              # (E)xperimental, (P)review or (S)table
-dashboard_set(WITH_PACKAGES         FALSE)             # Enable to generate packages
+dashboard_set(WITH_PACKAGES         TRUE)             # Enable to generate packages
 if(APPLE)
   dashboard_set(CMAKE_OSX_DEPLOYMENT_TARGET "10.9")
 endif()
@@ -41,7 +41,7 @@ dashboard_set(CTEST_SOURCE_DIRECTORY "D:/D/P/SlicerCustomAppTemplate")
 # Build Name: <OPERATING_SYSTEM>-<COMPILER>-<BITNESS>bits-QT<QT_VERSION>[-NoPython][-NoCLI][-NoConsole][-NoVTKDebugLeaks][-<BUILD_NAME_SUFFIX>]-<CTEST_BUILD_CONFIGURATION
 set(BUILD_NAME_SUFFIX "")
 
-set(run_ctest_with_update 0)
+set(run_ctest_with_update "FALSE")
 
 set(TEST_TO_EXCLUDE_REGEX "")
 
