@@ -37,7 +37,7 @@ dashboard_set(Slicer_DIRECTORY_BASENAME   "SC")
 dashboard_set(Slicer_DASHBOARD_SUBDIR     "${Slicer_RELEASE_TYPE}")
 dashboard_set(Slicer_DIRECTORY_IDENTIFIER "0")        # Set to arbitrary integer to distinguish different Experimental/Preview release build
                                                       # Set to Slicer version XYZ for Stable release build
-dashboard_set(CTEST_SOURCE_DIRECTORY "D:/D/P/SlicerCustomAppTemplate")
+dashboard_set(CTEST_SOURCE_DIRECTORY "D:/D/P/SlicerCAT")
 # Build Name: <OPERATING_SYSTEM>-<COMPILER>-<BITNESS>bits-QT<QT_VERSION>[-NoPython][-NoCLI][-NoConsole][-NoVTKDebugLeaks][-<BUILD_NAME_SUFFIX>]-<CTEST_BUILD_CONFIGURATION
 set(BUILD_NAME_SUFFIX "")
 
